@@ -19,7 +19,7 @@ export function WhatsAppButton({
 }: WhatsAppButtonProps) {
   const handleWhatsAppClick = () => {
     window.open(
-      "https://wa.me/554831974041?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações",
+      "https://wa.me/5544998428371?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações",
       "_blank"
     );
   };

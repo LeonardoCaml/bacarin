@@ -33,81 +33,52 @@ export default function Home() {
       image: "/service1.png",
     },
     {
-      title: "Troca de Óleo",
-      description:
-        "Lubrificação de qualidade para proteger o motor e garantir máxima performance. Seu carro rodando com segurança e eficiência!",
-      image: "/service2.png",
-    },
-    {
-      title: "Mecânica Geral",
-      description:
-        "Manutenção completa para garantir o desempenho e segurança do seu veículo.",
-      image: "/service3.png",
-    },
-    {
-      title: "Injeção Eletrônica",
-      description:
-        "Diagnóstico preciso para melhorar o desempenho e a economia de combustível do seu veículo. Evite falhas e garanta uma condução mais eficiente!",
-      image: "/service4.png",
-    },
-    {
-      title: "Remap",
-      description:
-        "Aumente a potência, otimize o consumo de combustível e melhore a dirigibilidade com um remapeamento de alto desempenho.",
-      image: "/service5.png",
-    },
-    {
       title: "Suspensão e Freios",
       description:
         "Mais conforto, estabilidade e segurança na direção! Revisamos amortecedores, molas, pastilhas e discos para um desempenho impecável.",
-      image: "/service6.png",
+      image: "/service2.png",
     },
     {
-      title: "Ar Condicionado Automotivo",
+      title: "Troca de Óleo de câmbio Automático",
       description:
-        "Realizamos a manutenção completa do seu ar-condicionado para garantir eficiência, conforto e qualidade do ar dentro do seu carro.",
-      image: "/service7.png",
+        "Troque o óleo do câmbio com qualidade para evitar danos e prolongar sua vida útil.",
+      image: "/service3.png",
     },
     {
-      title: "Polimento técnico + higienização de banco de couro",
+      title: "Óleo de Motor",
       description:
-        "Deixe seu carro com aparência de novo com nosso polimento técnico e a higienização profunda dos bancos de couro.",
-      image: "/service8.png",
-    },
-    {
-      title: "Higienização de estofado",
-      description:
-        "Seu carro mais limpo e saudável com nossa higienização profunda de estofados. Conforto e bem-estar garantidos!",
-      image: "/service9.png",
-    },
-    {
-      title: "Manutenção Cabeçote",
-      description:
-        "Evite falhas e garanta o funcionamento perfeito do motor com nossa manutenção especializada no cabeçote.",
-      image: "/service10.png",
+        "Troca de óleo rápida e confiável para manter o motor saudável e eficiente.",
+      image: "/service4.png",
     },
     {
       title: "Alinhamento/ Balanceamento",
       description:
         "Direção precisa e pneus conservados com alinhamento e balanceamento perfeitos.",
-      image: "/service11.png",
+      image: "/service5.png",
+    },
+    {
+      title: "Cambagem",
+      description:
+        "Ajuste de rodas para estabilidade, economia e melhor desempenho.",
+      image: "/service6.png",
     },
   ];
 
   const benefits = [
     {
-      title: "9 anos de experiência",
-      description: "Profissionais especializados para cuidar do seu carro.",
+      title: "Preço Justo",
+      description: "Manutenção de qualidade a um custo acessível.",
       icon: HandshakeIcon,
     },
     {
-      title: "Serviços completos",
-      description: "Da manutenção ao polimento, tudo em um só lugar.",
+      title: "Confiabilidade",
+      description:
+        "Técnicos com anos de experiência e compromisso com o cliente.",
       icon: Users,
     },
     {
-      title: "Qualidade garantida",
-      description: "Peças e equipamentos de alto padrão.",
+      title: "Flexibilidade",
+      description: "Horários flexíveis para atender suas necessidades.",
       icon: ShieldCheck,
     },
   ];
@@ -137,28 +108,23 @@ export default function Home() {
 
   const faqs = [
     {
-      question: "Quais serviços a SprintCar oferece?",
+      question: "Onde vocês estão localizados?",
       answer:
-        "A SprintCar oferece manutenção preventiva e corretiva, troca de óleo, freios, suspensão, alinhamento e balanceamento, diagnóstico eletrônico, reparos mecânicos e muito mais. Nosso objetivo é garantir que seu carro esteja sempre seguro e em ótimo funcionamento!",
+        "Estamos em Paranavaí, Paraná. Para mais detalhes sobre nossa localização, entre em contato pelo WhatsApp.",
     },
     {
-      question: "Preciso agendar um horário para atendimento?",
+      question: "Quais serviços a Bacarin oferece?",
       answer:
-        "Não é obrigatório, mas recomendamos! Assim, garantimos um atendimento mais rápido e sem espera. Você pode vir direto à oficina, mas se preferir comodidade, agende um horário conosco.",
+        "Oferecemos serviços automotivos como manutenção de câmbio automático, troca de óleo, revisão de freios e suspensão, alinhamento, balanceamento, cambagem e conserto de pneus. Contate-nos para mais informações!",
     },
     {
-      question: "Vocês trabalham com todas as marcas de veículos?",
+      question: "Como entro em contato com vocês?",
       answer:
-        "Sim! Nossa equipe está preparada para atender carros de todas as marcas e modelos, nacionais e importados, sempre com equipamentos modernos e peças de qualidade.",
-    },
-    {
-      question: "Como faço para agendar um atendimento?",
-      answer:
-        "É fácil! Você pode agendar pelo WhatsApp, telefone ou diretamente em nossa oficina. Entre em contato e escolha o melhor horário para você!",
+        "Contate-nos pelo WhatsApp (44) 99842-8371, e-mail bacarinmkt@gmail.com ou Instagram: @bacarinautocenter.",
     },
   ];
 
-  const whatsappNumber = "554831974041"; // Replace with actual number
+  const whatsappNumber = "5544998428371"; // Replace with actual number
   const whatsappMessage = encodeURIComponent(
     "Olá! Gostaria de saber mais sobre os serviços."
   );
@@ -168,16 +134,16 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative bg-[url('/HeroSectionMobile.png')] md:bg-[url('/HeroSection.png')] bg-cover bg-center px-4 py-6 md:py-20 h-screen flex items-center"
+        className="relative bg-[url('/HeroSection.png')] bg-cover bg-center px-4 py-6 md:py-20 h-screen flex items-center"
       >
-        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-8 items-center">
+        <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-8 items-center">
           {/* Conteúdo de texto */}
           <div className="space-y-3 text-center md:text-left">
             <Image
               src="./logo.png"
               width={100}
               height={100}
-              className="hidden md:block mx-auto md:mx-0"
+              className="mx-auto md:mx-0"
               alt="Logo WF Oficina"
             />
 
@@ -185,14 +151,12 @@ export default function Home() {
 
             {/* Ajuste de margem pinkuzida no mobile */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight text-balance mt-5 sm:mt-20 md:mt-5">
-              Seu carro em boas mãos: Qualidade, Transparência e Atendimento
-              Exclusivo
+              Confie a Manutenção do Seu Veículo a Quem Entende do Assunto!
             </h1>
 
             <p className="text-zinc-300 text-base sm:text-md leading-relaxed max-w-md mx-auto md:mx-0">
-              A SprintCar oferece serviços completos para manter seu carro
-              seguro e em perfeitas condições. Atendimento especializado para
-              quem valoriza excelência e confiança.
+              48 anos de experiência garantindo qualidade, honestidade e o
+              cuidado que seu carro merece.
             </p>
 
             <div className="flex justify-center md:justify-start">
@@ -205,25 +169,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Gradiente escuro opcional para leitura melhor */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent lg:hidden"></div>
       </section>
 
       {/* Services Section */}
-      <section className="bg-[url('/ServiceSection.png')] bg-cover py-16">
+      <section className="bg-gray-200 bg-cover bg-center py-16">
         <div className="container mx-auto px-4">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <div className="inline-block bg-white rounded-full px-6 py-2 mb-4">
-              <span className="text-pink-500 font-semibold">Serviços</span>
+            <div className="inline-block bg-green-500 rounded-full px-6 py-2 mb-4">
+              <span className="text-white font-semibold">Serviços</span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white">
+            <h2 className="text-4xl lg:text-5xl font-bold text-zinc-800">
               Conheça nossos serviços
             </h2>
           </div>
 
-          {/* Services Grid */}
           <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-6">
             {services.map((service, index) => (
               <Card
@@ -231,7 +191,6 @@ export default function Home() {
                 className="bg-white w-72 overflow-hidden hover:shadow-2xl transition-shadow flex flex-col"
               >
                 <CardContent className="p-4 flex flex-col h-full">
-                  {/* Imagem */}
                   <div className="aspect-video overflow-hidden rounded-lg">
                     <Image
                       src={service.image || "/placeholder.svg"}
@@ -242,7 +201,6 @@ export default function Home() {
                     />
                   </div>
 
-                  {/* Texto */}
                   <div className="flex-grow flex flex-col justify-between mt-4">
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 text-center mb-2">
@@ -253,7 +211,6 @@ export default function Home() {
                       </p>
                     </div>
 
-                    {/* Botão fixado na base */}
                     <div className="mt-6 flex justify-center">
                       <WhatsAppButton
                         size="lg"
@@ -268,16 +225,13 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
 
-      {/* Seção de benefícios */}
-      <section className="bg-pink-500 py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center gap-5 text-center mb-12">
-            <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold">
-              Por que Escolher a SprintCar?
+        <div className="container mx-auto px-4 py-16">
+          <div className="flex flex-col items-center gap-5 text-center mb-16">
+            <h1 className="text-zinc-800 text-3xl sm:text-4xl lg:text-5xl font-bold">
+              Por que Escolher a Bacarin?
             </h1>
-            <p className="text-base sm:text-lg max-w-3xl text-gray-400">
+            <p className="text-base sm:text-lg max-w-3xl text-zinc-600">
               Experiência, confiança e preço justo para cuidar do seu veículo
               como ele merece.
             </p>
@@ -288,13 +242,13 @@ export default function Home() {
             {benefits.map((item, index) => {
               const IconComponent = item.icon;
               return (
-                <Card key={index} className="bg-gray-100 border-0">
+                <Card key={index} className="bg-blue-700 border-0">
                   <CardContent className="flex flex-col justify-between h-full p-6 text-center items-center">
-                    <IconComponent className="h-10 w-10 text-pink-500 mb-4" />
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <IconComponent className="h-10 w-10 text-yellow-500 mb-4" />
+                    <h3 className="text-xl font-bold text-white mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-6">
+                    <p className="text-gray-300 text-sm mb-6">
                       {item.description}
                     </p>
                     <WhatsAppButton
@@ -311,21 +265,28 @@ export default function Home() {
 
       <section
         id="about"
-        className="relative bg-[url('/AboutSectionMobile.png')] md:bg-[url('/AboutSection.png')] bg-cover bg-center md:bg-right bg-no-repeat min-h-screen flex items-center px-6 py-16 md:py-24"
+        className="relative bg-[url('/AboutSection.png')] bg-cover bg-center md:bg-right bg-no-repeat min-h-screen flex items-center px-6 py-16 md:py-24"
       >
-        <div className="relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="block h-64" />
+        <div className="relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center">
+          <div>
+            <Image
+              src="./About.png"
+              width={500}
+              height={400}
+              className="mx-auto md:mx-0"
+              alt="CarImage"
+            />
+          </div>
 
           <div className="max-w-md flex flex-col gap-6 text-center md:text-left text-white">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-              Sobre a UPBLOCO
+              Conheça Mais Sobre a Bacarin
             </h1>
-            <p className="text-base sm:text-md text-gray-400 leading-relaxed">
-              Com mais de 17 anos em Caruaru, a UPBLOCO Oficina Automotiva é
-              referência em mecânica flex e diesel, destacando-se pela
-              excelência, honestidade e pontualidade nos serviços prestados.
-              Aqui, seu veículo recebe cuidado especializado com total confiança
-              e segurança.
+            <p className="text-base sm:text-md text-gray-200 leading-relaxed">
+              Desde 1973, a Bacarin Auto Center é referência em manutenção
+              automotiva, unindo tradição, qualidade e honestidade. Com quase 50
+              anos de experiência, oferecemos serviços confiáveis para garantir
+              a segurança e o desempenho do seu veículo.
             </p>
 
             <div className="flex justify-center md:justify-start mt-2">
@@ -340,7 +301,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="flex flex-col md:flex-row items-center justify-evenly px-12 md:px-32 h-56 lg:h-36 bg-pink-500">
+      <div className="flex flex-col md:flex-row items-center justify-evenly px-12 md:px-32 h-56 lg:h-36 bg-zinc-800">
         <h1 className="max-w-xl text-3xl sm:text-4xl lg:text-3xl text-white text-center md:text-start font-bold">
           Entre em contato e seja atendido por um especialista agora mesmo
         </h1>
@@ -407,7 +368,7 @@ export default function Home() {
         </div>
 
         {/* CTA Final */}
-        <div className="max-w-6xl mx-auto mt-16 px-6 py-10 flex flex-col lg:flex-row items-center justify-around gap-6 rounded-2xl bg-pink-500">
+        <div className="max-w-6xl mx-auto mt-16 px-6 py-10 flex flex-col lg:flex-row items-center justify-around gap-6 rounded-2xl bg-green-700">
           <div className="text-center lg:text-left max-w-lg">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Não perca tempo!
@@ -420,7 +381,7 @@ export default function Home() {
           <div className="flex justify-center lg:justify-end w-full lg:w-auto">
             <WhatsAppButton
               size="lg"
-              className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-3 h-auto rounded-full"
+              className="bg-white hover:bg-white text-green-700 text-lg px-8 py-3 h-auto rounded-full"
             >
               Fale conosco
             </WhatsAppButton>
@@ -462,7 +423,7 @@ export default function Home() {
               <li>
                 <a
                   href="#home"
-                  className="hover:text-pink-500 transition-colors"
+                  className="hover:text-green-500 transition-colors"
                 >
                   Home
                 </a>
@@ -470,7 +431,7 @@ export default function Home() {
               <li>
                 <a
                   href="#services"
-                  className="hover:text-pink-500 transition-colors"
+                  className="hover:text-green-500 transition-colors"
                 >
                   Serviços
                 </a>
@@ -478,7 +439,7 @@ export default function Home() {
               <li>
                 <a
                   href="#about"
-                  className="hover:text-pink-500 transition-colors"
+                  className="hover:text-green-500 transition-colors"
                 >
                   Sobre nós
                 </a>
@@ -486,7 +447,7 @@ export default function Home() {
               <li>
                 <a
                   href="#testimonials"
-                  className="hover:text-pink-500 transition-colors"
+                  className="hover:text-green-500 transition-colors"
                 >
                   Clientes
                 </a>
@@ -494,7 +455,7 @@ export default function Home() {
               <li>
                 <a
                   href="#faq"
-                  className="hover:text-pink-500 transition-colors"
+                  className="hover:text-green-500 transition-colors"
                 >
                   FAQ
                 </a>
@@ -507,20 +468,24 @@ export default function Home() {
             <h3 className="text-xl font-bold mb-4 text-white">Contato</h3>
             <div className="space-y-4 text-zinc-300">
               <div className="flex items-start justify-center sm:justify-start gap-3">
-                <MapPin className="h-5 w-5 mt-1 text-pink-500 flex-shrink-0" />
-                <p className="max-w-xs">Av. Coleira 834, Tijucas 88200-000</p>
+                <MapPin className="h-5 w-5 mt-1 text-green-500 flex-shrink-0" />
+                <p className="max-w-xs">Paranavaí, Paraná</p>
               </div>
               <div className="flex items-center justify-center sm:justify-start gap-3">
-                <Phone className="h-5 w-5 text-pink-500 flex-shrink-0" />
-                <p>(48) 3197-4041</p>
+                <Phone className="h-5 w-5 text-green-500 flex-shrink-0" />
+                <p>(44) 99842-8371</p>
               </div>
               <div className="flex items-start justify-center sm:justify-start gap-3">
-                <Mail className="h-5 w-5 mt-1 text-pink-500 flex-shrink-0" />
-                <p>sprintcarmkt@gmail.com</p>
+                <Mail className="h-5 w-5 mt-1 text-green-500 flex-shrink-0" />
+                <p>bacarinmkt@gmail.com</p>
               </div>
               <div className="flex items-start justify-center sm:justify-start gap-3">
-                <Clock className="h-5 w-5 mt-1 text-pink-500 flex-shrink-0" />
-                <p>Seg - Sex: 08:00 às 12:00 | 13:30 às 18:30</p>
+                <Clock className="h-5 w-5 mt-1 text-green-500 flex-shrink-0" />
+                <p>Seg - Sex: 08:00 - 11:30, 13:00 - 18:00</p>
+              </div>
+              <div className="flex items-start justify-center sm:justify-start gap-3">
+                <Clock className="h-5 w-5 mt-1 text-green-500 flex-shrink-0" />
+                <p>Sábado: 08:00 - 12:00</p>
               </div>
             </div>
           </div>
@@ -532,7 +497,7 @@ export default function Home() {
             </h3>
             <div className="rounded-lg overflow-hidden shadow-lg border border-zinc-700">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15792.731981492012!2d-35.983112!3d-8.284579!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98b9655b30387%3A0x9f6ded4c0e6e7f5c!2sAv.%20Campina%20Grande%2C%201%20-%20Centen%C3%A1rio%2C%20Caruaru%20-%20PE%2C%2055006-145%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1761414123504!5m2!1spt-BR!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117454.51954462002!2d-52.535371553028945!3d-23.080480380321614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9492967c3c084e15%3A0x687880f51dc0f0e!2zUGFyYW5hdmHDrSwgUFI!5e0!3m2!1spt-BR!2sbr!4v1761595066516!5m2!1spt-BR!2sbr"
                 className="w-full h-64 sm:h-56 md:h-48 lg:h-56"
                 style={{ border: 0 }}
                 loading="lazy"
@@ -545,7 +510,7 @@ export default function Home() {
 
         {/* Footer Bottom */}
         <div className="border-t border-zinc-800 mt-10 pt-6 text-center text-sm text-zinc-500">
-          © {new Date().getFullYear()} SprintCar Oficina MKT — Todos os direitos
+          © {new Date().getFullYear()} Bacarin Oficina MKT — Todos os direitos
           reservados.
         </div>
       </footer>

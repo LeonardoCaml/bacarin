@@ -11,13 +11,13 @@ const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  applicationName: "Sprintcar - Centro Automotivo",
+  applicationName: "Bacarin - Centro Automotivo",
   title: {
-    default: "Sprintcar - Centro Automotivou",
-    template: "%s | Sprintcar - Centro Automotivo",
+    default: "Bacarin - Centro Automotivou",
+    template: "%s | Bacarin - Centro Automotivo",
   },
   description:
-    "A SprintCar oferece serviços completos para manter seu carro seguro e em perfeitas condições. Atendimento especializado para quem valoriza excelência e confiança.",
+    "A Bacarin Auto Center é referência em manutenção automotiva, unindo tradição, qualidade e honestidade.",
   alternates: {
     canonical: siteUrl,
   },
@@ -36,24 +36,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
-    siteName: "Sprintcar - Centro Automotivo",
-    title: "Sprintcar - Centro Automotivo",
+    siteName: "Bacarin - Centro Automotivo",
+    title: "Bacarin - Centro Automotivo",
     description:
-      "A SprintCar oferece serviços completos para manter seu carro seguro e em perfeitas condições. Atendimento especializado para quem valoriza excelência e confiança.",
+      "A Bacarin Auto Center é referência em manutenção automotiva, unindo tradição, qualidade e honestidade.",
     images: [
       {
         url: "/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Sprintcar - Centro Automotivo",
+        alt: "Bacarin - Centro Automotivo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sprintcar - Centro Automotivo",
+    title: "Bacarin - Centro Automotivo",
     description:
-      "A SprintCar oferece serviços completos para manter seu carro seguro e em perfeitas condições. Atendimento especializado para quem valoriza excelência e confiança.",
+      "A Bacarin Auto Center é referência em manutenção automotiva, unindo tradição, qualidade e honestidade.",
     images: ["/logo.png"],
   },
   icons: {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#c62865ff",
+  themeColor: "#866df5ff",
 };
 
 export default function RootLayout({
@@ -72,37 +72,35 @@ export default function RootLayout({
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
-    name: "Sprintcar - Centro Automotivo",
+    name: "Bacarin - Centro Automotivo",
     url: siteUrl,
     image: `${siteUrl}/logo.png`,
     description:
-      "A SprintCar oferece serviços completos para manter seu carro seguro e em perfeitas condições. Atendimento especializado para quem valoriza excelência e confiança.",
-    telephone: "+554831974041",
+      "A Bacarin Auto Center é referência em manutenção automotiva, unindo tradição, qualidade e honestidade.",
+    telephone: "+5544998428371",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Av. Coleira 834",
-      addressLocality: "Tijucas",
-      addressRegion: "SC",
-      postalCode: "88200-000",
+      streetAddress: "Paranavaí",
+      addressLocality: "Paraná",
       addressCountry: "BR",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: -27.231265932934903,
-      longitude: -48.62082797116306,
+      latitude: -23.082533,
+      longitude: -52.462244,
     },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         opens: "08:00",
-        closes: "12:00",
+        closes: "18:00",
       },
       {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "13:30",
-        closes: "18:30",
+        opens: "08:00",
+        closes: "12:00",
       },
     ],
     priceRange: "$$",
@@ -116,15 +114,30 @@ export default function RootLayout({
       },
       {
         "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Revisão e freios ABS" },
+        itemOffered: { "@type": "Service", name: "Câmbio automático" },
       },
       {
         "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Suspensão e direção" },
+        itemOffered: { "@type": "Service", name: "Suspensão e freios" },
       },
       {
         "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Diagnóstico via scanner" },
+        itemOffered: {
+          "@type": "Service",
+          name: "Troca de óleo e câmbio automático",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Óleo de motor" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "alinhamento/balanceamento" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Cambagem" },
       },
     ],
   };
