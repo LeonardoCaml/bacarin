@@ -2,6 +2,11 @@ import type React from "react";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { Suspense } from "react";
+import {
+  GoogleTagManager,
+  GoogleTagManagerNoScript,
+} from "@/components/google-tag-manager";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -42,7 +47,7 @@ export const metadata: Metadata = {
       "A Bacarin Auto Center é referência em manutenção automotiva, unindo tradição, qualidade e honestidade.",
     images: [
       {
-        url: "/logo.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Bacarin - Centro Automotivo",
@@ -54,11 +59,11 @@ export const metadata: Metadata = {
     title: "Bacarin - Centro Automotivo",
     description:
       "A Bacarin Auto Center é referência em manutenção automotiva, unindo tradição, qualidade e honestidade.",
-    images: ["/logo.png"],
+    images: ["/og-image.png"],
   },
   icons: {
-    icon: [{ url: "/favicon.png", sizes: "any" }],
-    shortcut: ["/favicon.png"],
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    shortcut: ["/favicon.ico"],
   },
 };
 
@@ -69,6 +74,15 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const org = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Bacarin - Centro Automotivo",
+    url: siteUrl,
+    logo: `${siteUrl}/og-image.png`,
+    image: `${siteUrl}/og-image.png`,
+  };
+
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
@@ -145,13 +159,21 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <GoogleTagManager gtmId="GTM-TJV2S238" />
+      </head>
+      <body
+        className={`${inter.className} font-sans antialiased overflow-x-hidden`}
+      >
+        <GoogleTagManagerNoScript gtmId="GTM-TJV2S238" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(org) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
         />
-      </head>
-      <body className={`${inter.className} antialiased`}>
-        {children}
+        <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
     </html>
