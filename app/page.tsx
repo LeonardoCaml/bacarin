@@ -134,20 +134,20 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative bg-[url('/HeroSection.png')] bg-cover bg-center px-4 py-6 md:py-20 h-screen flex items-center"
+        className="relative bg-[url('/HeroSectionMobile.png')] md:bg-[url('/HeroSection.png')] bg-cover bg-center px-4 py-6 md:py-20 min-h-screen flex items-center"
       >
         <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-8 items-center">
           {/* Conteúdo de texto */}
           <div className="space-y-3 text-center md:text-left">
             <Image
               src="./logo.png"
-              width={100}
+              width={150}
               height={100}
               className="mx-auto md:mx-0"
               alt="Logo WF Oficina"
             />
 
-            <div className="block md:hidden h-72" />
+            <div className="block md:hidden h-122" />
 
             {/* Ajuste de margem pinkuzida no mobile */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight text-balance mt-5 sm:mt-20 md:mt-5">
